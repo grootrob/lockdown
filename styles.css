@@ -1,0 +1,566 @@
+:root {
+    --purple-color: #3B3EF9;
+    --hotpink-color: #E74B94;
+    --lightpink-color: #FEE4F1;
+    --lightgrey-color: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--purple-color);
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+
+
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100vw;
+    display: flex;
+    /*    background-color: black;*/
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav li {
+    /*    background-color: black;*/
+    padding: 15px;
+    /*    display: inline-block;*/
+
+}
+
+.readmore {
+    background-color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+
+.correspondentLogo {
+    fill: #fff;
+    height: 25px;
+
+}
+
+.correspondentHover {
+    transition: .5s;
+}
+
+.correspondentHover:hover {
+    fill: #E74B94 !important;
+}
+
+.leesmeer:hover {
+    fill: #E74B94 !important;
+    stroke: rgba(255, 255, 255, 0) !important;
+    stroke-width: 0 !important;
+}
+
+.leesmeer {
+    fill: #fff;
+    stroke-width: 15;
+    height: 13px;
+    padding: 6px 3px;
+    transition: .5s;
+}
+
+.fullsection {
+    /*    background-color: aquamarine;*/
+    height: 100vh;
+}
+
+.eyeMap {
+    background-color: var(--lightpink-color);
+}
+
+
+.page2 {
+    background-color: var(--lightpink-color);
+}
+
+.kranten {
+    padding: 100px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.veilig {
+    padding: 100px 250px;
+    background: rgb(59, 62, 249);
+    background: linear-gradient(180deg, rgba(59, 62, 249, 1) 50%, rgba(254, 228, 241, 1) 50%);
+}
+
+
+.articletitle {
+    background-color: white;
+    width: 50vw;
+    display: block;
+    margin: auto;
+    padding: 30px 50px;
+}
+
+
+.veilig h3 {
+    color: var(--hotpink-color);
+    width: 100%;
+    font-size: 2rem;
+}
+
+.sectiontitle {
+    /*    background-color: aqua;*/
+    width: 100%
+}
+
+
+
+.krantenartikel {
+    /*    background-image: url(images/KrantenArtikelen-01.svg);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+}
+
+.krantenartikel img {
+    padding: 50px 0;
+    animation: skewing 3s infinite;
+    transform-origin: bottom;
+}
+
+@keyframes skewing {
+
+    0% {
+        transform: skewX(0deg);
+    }
+
+    20% {
+        transform: skewX(1deg);
+    }
+
+    40% {
+        transform: skewX(0deg);
+    }
+
+
+    75% {
+        transform: skewX(1deg);
+    }
+
+    80% {
+        transform: skewX(0deg);
+    }
+
+    85% {
+        transform: skewX(1deg);
+    }
+
+    90% {
+        transform: skewX(0deg);
+    }
+
+}
+
+
+
+.krantencontent {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 50px 10px 50px 30px;
+    /*    background-color: #ff00ff;*/
+    color: white;
+}
+
+
+.krantencontent p {
+    margin-top: 0px;
+}
+
+.krantencontent p.bold {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    line-height: 1.7rem;
+}
+
+
+.intro {
+    /*    background-color: azure;*/
+    max-width: 1140px;
+    display: block;
+    margin: auto;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    width: 900px;
+    color: black;
+    /*    background-color: #0dd6d6;*/
+    padding: 40vh 10px 10px 10px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h2 {
+    font-size: 1.2rem;
+    width: 900px;
+    color: white;
+    /*    background-color: #0dd6d6;*/
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', monospace;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 3rem;
+    width: 900px;
+    color: white;
+    /*    background-color: #0dd6d6;*/
+    padding: 3vh 10px 5vh 10px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+}
+
+p.bold {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+}
+
+#scroll {
+    height: 50px;
+    display: block;
+    margin: auto;
+    fill: black;
+    position: absolute;
+    bottom: 40px;
+    left: 48vw;
+}
+
+#scrollDot {
+    animation: scrolldown 2.5s infinite ease-in-out;
+}
+
+@keyframes scrolldown {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+
+/*Css Telefoon Map*/
+
+.mapContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map {
+    height: 95vh;
+    max-width: 95vw;
+}
+
+
+
+#Layer_8 {
+    animation: telefoonRing infinite 1s;
+    transform-origin: center;
+}
+
+#Layer_18 {
+    animation: telefoonRing infinite reverse 1s;
+    transform-origin: center;
+}
+
+#Layer_22 {
+    animation: telefoonRing3 infinite reverse 1.2s;
+    animation-delay: .3s;
+    transform-origin: center;
+}
+
+#Layer_25 {
+    animation: telefoonRing infinite reverse 1s;
+    animation-delay: .3s;
+    transform-origin: center;
+}
+
+
+#Layer_32 {
+    animation: telefoonRing2 infinite reverse 1s;
+    animation-delay: .5s;
+    transform-origin: center;
+}
+
+#Layer_34 {
+    animation: telefoonRing3 infinite 1.2s;
+    animation-delay: .2s;
+    transform-origin: center;
+}
+
+#Layer_37 {
+    animation: telefoonRing2 infinite 1s;
+    animation-delay: .4s;
+    transform-origin: center;
+}
+
+#Layer_44 {
+    animation: telefoonRing infinite reverse 1s;
+    animation-delay: .6s;
+    transform-origin: center;
+}
+
+#Layer_49 {
+    animation: telefoonRing2 infinite 1s;
+    transform-origin: center;
+}
+
+#Layer_8:hover,
+#Layer_18:hover,
+#Layer_22:hover,
+#Layer_25:hover,
+#Layer_32:hover,
+#Layer_34:hover,
+#Layer_37:hover,
+#Layer_44:hover,
+#Layer_49:hover {
+    animation: none;
+}
+
+#Bluetooth,
+#Location,
+#Noorwegen,
+#GPS,
+#Singapore,
+#QR,
+#Privacy,
+#Australie,
+#Ijsland {
+    opacity: 0;
+    transition: 0.3s;
+    /*    animation: telefoonRing infinite 1s;*/
+    transform-origin: center;
+
+}
+
+#Bluetooth:hover,
+#Location:hover,
+#Noorwegen:hover,
+#GPS:hover,
+#Singapore:hover,
+#QR:hover,
+#Privacy:hover,
+#Australie:hover,
+#Ijsland:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+
+/*Pop-up*/
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 2.5vh auto;
+    padding: 30px;
+    background: var(--lightgrey-color);
+    box-sizing: border-box;
+    border: 50px black solid;
+    width: 80vw;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 800;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 400ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: var(--hotpink-color);
+}
+
+.popup .content {
+    min-height: 70vh;
+    overflow: auto;
+}
+
+.popup .content img {
+    width: 100%;
+}
+
+.popup .content p {
+    font-family: 'Courier new', monospace;
+    line-height: 19px;
+    font-size: 0.87rem;
+    width: 60%;
+}
+
+
+
+
+/*******************************Loader******************************/
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/COVID-20.gif) center no-repeat #3B3EF9;
+}
+
+
+
+
+/*******************************Keyframes******************************/
+
+@keyframes telefoonRing {
+    0% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        transform: rotateX(-5deg) rotateY(5deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        transform: rotateX(5deg) rotateY(-5deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        transform: rotateX(-5deg) rotateY(5deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        transform: rotateX(5deg) rotateY(-5deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes telefoonRing2 {
+    0% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        transform: rotateX(8deg) rotateY(-3deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        transform: rotateX(-8deg) rotateY(3deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        transform: rotateX(8deg) rotateY(-3deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        transform: rotateX(-8deg) rotateY(3deg) rotateZ(.5deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes telefoonRing3 {
+    0% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        transform: rotateX(-8deg) rotateY(3deg) rotateZ(1deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        transform: rotateX(8deg) rotateY(-3deg) rotateZ(1deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        transform: rotateX(-8deg) rotateY(3deg) rotateZ(1deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        transform: rotateX(8deg) rotateY(-3deg) rotateZ(1deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        transform: rotateX(0) scale(1) skew(1deg)
+    }
+}
