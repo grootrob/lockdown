@@ -83,6 +83,16 @@ nav a {
     transition: .5s;
 }
 
+.page1 svg {
+    position: absolute;
+    opacity: .9;
+    z-index: -1;
+}
+
+.page1 .intro {
+    z-index: 9999;
+}
+
 .fullsection {
     /*    background-color: aquamarine;*/
     height: 100vh;
@@ -105,6 +115,7 @@ nav a {
 }
 
 .veilig {
+    box-sizing: border-box;
     padding: 100px 250px;
     background: rgb(59, 62, 249);
     background: linear-gradient(180deg, rgba(59, 62, 249, 1) 50%, rgba(254, 228, 241, 1) 50%);
@@ -215,7 +226,7 @@ nav a {
 h1 {
     font-size: 3rem;
     width: 900px;
-    color: black;
+    color: white;
     /*    background-color: #0dd6d6;*/
     padding: 40vh 10px 10px 10px;
     font-family: 'IBM Plex Mono', monospace;
@@ -274,6 +285,65 @@ p.bold {
         opacity: 0;
     }
 }
+
+
+
+
+/*Css Location Map*/
+
+.ontwikkeling-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ontwikkeling-map {
+    height: 95vh;
+    max-width: 95vw;
+
+}
+
+.ontwikkeling-map .cls-6 {
+    fill: white;
+    transition: .3s;
+    opacity: .5;
+
+}
+
+.ontwikkeling-map .cls-6:hover {
+    fill: lightpink;
+    transition: .3s
+}
+
+.ontwikkeling-map .cls-7 {
+    fill: white;
+    transition: .3s;
+    animation: lightup 3.5s infinite;
+    opacity: .5;
+}
+
+.ontwikkeling-map .cls-7:hover {
+    fill: #ff4ca0;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+    transition: .3s
+}
+
+
+@keyframes lightup {
+    0% {
+        fill: white;
+
+    }
+
+    50% {
+        fill: #ff4ca0;
+        opacity: 1;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
 
 
 /*Css Telefoon Map*/
@@ -417,6 +487,7 @@ p.bold {
 }
 
 .popup h2 {
+    font-size: 2rem;
     margin-top: 0;
     padding: 0;
     color: #333;
@@ -453,6 +524,7 @@ p.bold {
     line-height: 19px;
     font-size: 0.87rem;
     width: 60%;
+    margin-top: 20px;
 }
 
 
