@@ -130,8 +130,20 @@ nav a {
 
 .contactonderzoek svg .guy {
     fill: #000000;
-    stroke: #3B3EF9;
-    stroke-width: 3px;
+    stroke: white;
+    stroke-width: 5px;
+}
+
+
+.contactonderzoek svg {
+    margin: 20px 0;
+}
+
+
+.verspreiding-container {
+    background-color: white;
+    padding: 40px;
+    width: 40vw;
 }
 
 #rij2,
@@ -145,60 +157,33 @@ nav a {
 
 
 #rij2 {
-    animation: rij1fade 10s infinite;
+    animation: rij2fade 10s infinite;
 
 }
 
 #rij3 {
-    animation: rij1fade 8s infinite;
-    animation-delay: 2s
+    animation: rij3fade 10s infinite;
+
 }
 
 
 #rij4 {
-    animation: rij1fade 6s infinite;
-    animation-delay: 4s
+    animation: rij4fade 10s infinite;
+
 }
 
 #rij5 {
-    animation: rij1fade 4s infinite;
-    animation-delay: 6s
+    animation: rij5fade 10s infinite;
+
 }
 
 #rij6 {
-    animation: rij1fade 2s infinite;
-    animation-delay: 8s;
-}
-
-
-@keyframes rij1fade {
-
-    100% {
-        opacity: 1;
-    }
+    animation: rij6fade 10s infinite;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contactonderzoek svg {
-    height: 200px;
+    height: 240px;
     /*    display: block;*/
 }
 
@@ -213,6 +198,7 @@ nav a {
 .contactonderzoek h3 {
     font-size: 4rem;
     min-width: 60vw;
+    margin-right: 150px;
 }
 
 
@@ -729,4 +715,71 @@ p.bold {
     100% {
         transform: rotateX(0) scale(1) skew(1deg)
     }
+}
+
+
+
+
+@keyframes rij2fade {
+
+    20% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+
+    98% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+}
+
+@keyframes rij3fade {
+
+    40% {
+        opacity: 1;
+        filL: #E74B94;
+
+    }
+
+    98% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+
+}
+
+@keyframes rij4fade {
+
+    60% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+
+    98% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+}
+
+@keyframes rij5fade {
+
+    80% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+
+    98% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+
+}
+
+@keyframes rij6fade {
+
+    98% {
+        opacity: 1;
+        filL: #E74B94;
+    }
+
 }
